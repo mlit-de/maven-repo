@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>rxml-parent</artifactId>
+        <groupId>de.mlit.rxml</groupId>
+        <version>0.8-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <name>${project.groupId} - ${project.artifactId}</name>
+
+    <artifactId>rxml-relaxng</artifactId>
+    <version>0.8-SNAPSHOT</version>
+
+    <description>This library wraps a relax-ng verifier to rxml interfaces.</description>
+    <url>https://github.com/mlit-de/rxml-relaxng</url>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Markus Lauer</name>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:mlit-de/rxml-relaxng.git</connection>
+        <developerConnection>scm:git:git@github.com:mlit-de/rxml-relaxng.git</developerConnection>
+        <url>git@github.com:mlit-de/rxml-relaxng.git</url>
+    </scm>
+
+    <properties>
+        <java.source.version>1.8</java.source.version>
+        <java.target.version>1.8</java.target.version>
+        <encoding>UTF-8</encoding>
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>de.mlit.rxml</groupId>
+            <artifactId>rxml-core</artifactId>
+            <version>0.8-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>nu.validator</groupId>
+            <artifactId>jing</artifactId>
+            <version>20130806VNU</version>
+        </dependency>
+    </dependencies>
+
+</project>
